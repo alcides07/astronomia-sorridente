@@ -1,2 +1,2 @@
 language = "csharp"
-run = ""mcs -out:main.exe 'pasta/arquivo.cs' ; mono main.exe"
+run = "mcs -out:main.exe 'Projeto_POO/Main.cs' ; mono main.exe"
