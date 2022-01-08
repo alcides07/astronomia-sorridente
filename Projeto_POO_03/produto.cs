@@ -1,6 +1,6 @@
 using System;
 
-class Produto {
+class Produto{
     //Atributos
     private int id;
     private int qtd;
@@ -19,7 +19,7 @@ class Produto {
     }
 
     //Construtor 2
-    public Produto(int id, string descricao, string fabricante, int qtd, double valor, Categoria categoria) : this(id, descricao, fabricante, qtd, valor) {
+    public Produto(int id, string descricao, string fabricante, int qtd, double valor, Categoria categoria) : this(id, descricao, fabricante, qtd, valor){
         this.categoria = categoria;
     }
     
@@ -74,13 +74,13 @@ class Produto {
     }
     
     //Formatação 
-    public override string ToString() {
+    public override string ToString(){
         if (categoria == null){
-            return descricao + ", " + fabricante + "\n" + "Estoque: " + qtd + "\n" + "Valor: " + valor.ToString("R$ 0.00");
+            return descricao + " " + fabricante + "\n" + "Estoque: " + qtd + "\n" + "Valor: " + valor.ToString("R$ 0.00");
         }
 
         else{
-            return "Categoria " + categoria.GetId() + ": " + categoria.GetDescricao() + "\n" + descricao + ", " + fabricante + "\n" + "Estoque: " + qtd + "\n" + "Valor: " + valor.ToString("R$ 0.00");
+            return "Categoria " + categoria.GetId() + ": " + categoria.GetDescricao() + "\n" + descricao + " " + fabricante + "\n" + "Estoque: " + qtd + "\n" + "Valor: " + valor.ToString("R$ 0.00");
         }
     }
 }
