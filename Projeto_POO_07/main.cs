@@ -15,8 +15,12 @@ class MainClass{
                     case 0: Console.WriteLine("Ao infinito e além!"); break;
                     case 1: CategoriaListar(); break;
                     case 2: CategoriaInserir(); break;
-                    case 3: ProdutoListar(); break;
-                    case 4: ProdutoInserir(); break;
+                    case 3: CategoriaAtualizar(); break;
+                    case 4: CategoriaExcluir(); break;
+                    case 5: ProdutoListar(); break;
+                    case 6: ProdutoInserir(); break;
+                    case 7: ProdutoAtualizar(); break;
+                    case 8: ProdutoExcluir(); break;
                     default:
                         Console.WriteLine("A opção informada não é válida!");
                         break;
@@ -34,8 +38,12 @@ class MainClass{
         Console.WriteLine("----------- Opções Disponíveis -----------");
         Console.WriteLine("1 - Listar Categorias");
         Console.WriteLine("2 - Inserir Categoria");
-        Console.WriteLine("3 - Listar Produto");
-        Console.WriteLine("4 - Inserir Produto");
+        Console.WriteLine("3 - Atualizar Categoria");
+        Console.WriteLine("4 - Excluir Categoria");
+        Console.WriteLine("5 - Listar Produto");
+        Console.WriteLine("6 - Inserir Produto");
+        Console.WriteLine("7 - Atualizar Produto");
+        Console.WriteLine("8 - Excluir Produto");
         Console.WriteLine("0 - Encerrar operações");
         Console.WriteLine("");
         Console.Write("Informe a operação: ");
@@ -44,6 +52,8 @@ class MainClass{
         return operacao;
     }
     
+    ////////////////////////////// CATEGORIA /////////////////////////////
+
     //Método Listar Categorias
     public static void CategoriaListar(){
         Console.WriteLine("----------- Listando Categorias -----------");
@@ -64,6 +74,7 @@ class MainClass{
     public static void CategoriaInserir(){
         Console.WriteLine("----------- Inserindo Categorias -----------");
         //Id como contador a fim de deixar em ordem ou ordenar apenas na hora de printar a lista de categorias.
+        
         //Id da categoria
         Console.Write("Informe um Id para a categoria: "); 
         int id = int.Parse(Console.ReadLine());
@@ -72,17 +83,64 @@ class MainClass{
         Console.Write("Informe uma descrição para a categoria: ");
         string descricao = Console.ReadLine();
         Console.WriteLine("");
-        
-        //Mensagem de confirmação
-        Console.WriteLine($"Categoria {descricao} cadastrada com sucesso!");
-        Console.WriteLine("");
 
         //Instanciar classe de Categoria (criando uma nova categoria)
         Categoria categoria = new Categoria(id, descricao);
 
         //Inserção da categoria na lista de categorias 
         ncategoria.Inserir(categoria);
+
+        //Mensagem de confirmação
+        Console.WriteLine($"Categoria {descricao} cadastrada com sucesso!");
+        Console.WriteLine("");
     }
+
+    //Método Atualizar Categoria
+    public static void CategoriaAtualizar(){
+        Console.WriteLine("----------- Atualizando Categoria -----------");
+        CategoriaListar();
+        
+        //Id
+        Console.Write("Informe um Id para a categoria que deseja atualizar: ");
+        int id = int.Parse(Console.ReadLine());
+        
+        //Descrição da categoria
+        Console.Write("Informe uma nova descrição para a categoria: ");
+        string descricao = Console.ReadLine();
+        Console.WriteLine("");
+
+        //Instanciar classe de Categoria (criando uma nova categoria)
+        Categoria categoria = new Categoria(id, descricao);
+
+        //Inserção da categoria na lista de categorias 
+        ncategoria.Atualizar(categoria);
+
+        //Mensagem de confirmação
+        Console.WriteLine($"Categoria atualizada para {descricao} com sucesso!");
+        Console.WriteLine("");
+    }
+
+    //Método Excluir Categoria
+    public static void CategoriaExcluir(){
+        Console.WriteLine("----------- Excluindo Categoria -----------");
+        CategoriaListar();
+        
+        //Id
+        Console.Write("Informe o Id da categoria que deseja excluir: "); 
+        int id = int.Parse(Console.ReadLine());
+
+        //Procurando a categoria
+        Categoria categoria = ncategoria.Listar(id);
+
+        //Mensagem de confirmação
+        Console.WriteLine($"Categoria {categoria.GetDescricao()} excluída com sucesso!");
+        Console.WriteLine("");
+
+        //Exclui a categoria
+        ncategoria.Excluir(categoria);
+    }
+
+    ////////////////////////////// PRODUTO /////////////////////////////
 
     //Método Listar Produto
     public static void ProdutoListar(){
@@ -130,7 +188,7 @@ class MainClass{
         CategoriaListar();
 
         //Número da categoria do produto
-        Console.WriteLine("----------- Inserindo Produto na Categoria -----------");
+        Console.WriteLine("----------- Inserindo Produto em uma Categoria -----------");
         Console.Write("Informe o número da categoria do produto: ");
         int IdCategoria = int.Parse(Console.ReadLine());
         Console.WriteLine("");
@@ -147,5 +205,16 @@ class MainClass{
         //Mensagem de confirmação
         Console.WriteLine($"Produto {descricao} adicionado com sucesso na categoria {categoria.GetDescricao()}.");
         Console.WriteLine("");
-    } 
+    }
+
+    //Método Atualizar Produto
+    public static void ProdutoAtualizar(){
+        
+    }
+
+    //Método Excluir Produto
+    public static void ProdutoExcluir(){
+        
+    }
+     
 }
