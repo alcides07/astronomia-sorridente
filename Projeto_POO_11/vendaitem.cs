@@ -40,9 +40,10 @@ class VendaItem {
     }
 
     public override string ToString(){
-        return produto.GetDescricao() + " - " + valor.ToString("R$ 0.00") + "\n" + "Quantidade: " + qtd;
+        return "- " + produto.GetDescricao() + " - " + valor.ToString("R$ 0.00") + "\n" + "  " + "Quantidade: " + qtd;
     }
-
-    //Telescópio tal tal - R$ 20.00
-    //Quantidade: 50
+        //- Telescópio 50mm - R$ 20.00
+        //  Quantidade: 50
+    
+        //Valor total: 50 * 20
 }

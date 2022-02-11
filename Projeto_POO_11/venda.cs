@@ -50,14 +50,14 @@ class Venda{
     public override string ToString(){
         //Ainda está comprando
         if(carrinho){ 
-            return data.ToString("dd/MM/yyyy") + "\n" + "Carrinho " + id + " de " + cliente.nome;
+            return data.ToString("dd/MM/yyyy") + "\n" + "Carrinho " + id + " de " + cliente.nome + ":";
             // 10/02/2022
             // Carrinho 1 de Fulanin
         }
     
         //Já finalizou a compra
         else{ 
-            return data.ToString("dd/MM/yyyy") + "\n" + "Compra " + id + " de " + cliente.nome;
+            return data.ToString("dd/MM/yyyy") + "\n" + "Compra " + id + " de " + cliente.nome + ":";
             // 10/02/2022
             // Compra 1 de Fulanin
         }

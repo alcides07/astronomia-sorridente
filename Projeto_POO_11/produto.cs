@@ -80,7 +80,11 @@ class Produto{
         }
 
         else{
-            return "Categoria " + categoria.GetId() + ": " + categoria.GetDescricao() + "\n" + id + " - " + descricao + " " + fabricante + "\n" + "Estoque: " + qtd + "\n" + "Valor: " + valor.ToString("R$ 0.00");
-        }
+            return "Categoria " + categoria.GetId() + ": " + categoria.GetDescricao() + "\n" + descricao + " " + fabricante + $"(Id: {id})" + "\n" + "Estoque: " + qtd + "\n" + "Valor: " + valor.ToString("R$ 0.00");
+        }       
+                //Categoria 1: Telescópio
+                //Telescópio 20mm Celestron (Id: 5)
+                //Estoque: 5
+                //Valor: R$ 250.00
     }
 }
