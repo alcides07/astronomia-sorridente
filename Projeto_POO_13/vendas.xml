@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfVenda xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Venda>
+    <Id>1</Id>
+    <Data>2022-03-19T12:55:44.578078+00:00</Data>
+    <Carrinho>false</Carrinho>
+    <ClienteId>1</ClienteId>
+    <Itens>
+      <VendaItem>
+        <Qtd>5</Qtd>
+        <Valor>15</Valor>
+        <ProdutoId>1</ProdutoId>
+      </VendaItem>
+    </Itens>
+  </Venda>
+  <Venda>
+    <Id>2</Id>
+    <Data>2022-03-19T14:49:20.036576+00:00</Data>
+    <Carrinho>false</Carrinho>
+    <ClienteId>2</ClienteId>
+    <Itens>
+      <VendaItem>
+        <Qtd>1</Qtd>
+        <Valor>950</Valor>
+        <ProdutoId>6</ProdutoId>
+      </VendaItem>
+    </Itens>
+  </Venda>
+</ArrayOfVenda>
