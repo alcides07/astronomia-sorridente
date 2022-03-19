@@ -1,4 +1,5 @@
 using System;
+//Testando
 
 class Categoria : IComparable<Categoria> {
     //Atributos
