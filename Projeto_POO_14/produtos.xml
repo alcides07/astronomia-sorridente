@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfProduto xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Produto>
+    <Id>1</Id>
+    <Qtd>30</Qtd>
+    <Descricao>Chaveiro do Sistema Solar</Descricao>
+    <Valor>15</Valor>
+    <Fabricante>Pleiades</Fabricante>
+    <CategoriaId>1</CategoriaId>
+  </Produto>
+  <Produto>
+    <Id>4</Id>
+    <Qtd>25</Qtd>
+    <Descricao>Chaveiro Missão Apollo11</Descricao>
+    <Valor>5</Valor>
+    <Fabricante>Pleiades</Fabricante>
+    <CategoriaId>1</CategoriaId>
+  </Produto>
+  <Produto>
+    <Id>5</Id>
+    <Qtd>13</Qtd>
+    <Descricao>Binóculo Diurno de Longo Alcance 10x42mm - Preto</Descricao>
+    <Valor>800</Valor>
+    <Fabricante>Nikon</Fabricante>
+    <CategoriaId>2</CategoriaId>
+  </Produto>
+  <Produto>
+    <Id>6</Id>
+    <Qtd>10</Qtd>
+    <Descricao>Binóculo Noturno 10x50 - Camuflado</Descricao>
+    <Valor>950</Valor>
+    <Fabricante>Skywatcher</Fabricante>
+    <CategoriaId>2</CategoriaId>
+  </Produto>
+  <Produto>
+    <Id>2</Id>
+    <Qtd>10</Qtd>
+    <Descricao>Telescópio 70mm Newtoniano - Cinza</Descricao>
+    <Valor>800</Valor>
+    <Fabricante>Celestron</Fabricante>
+    <CategoriaId>3</CategoriaId>
+  </Produto>
+  <Produto>
+    <Id>3</Id>
+    <Qtd>8</Qtd>
+    <Descricao>Telescópio 114mm refletor - Preto</Descricao>
+    <Valor>1500</Valor>
+    <Fabricante>Bluetek</Fabricante>
+    <CategoriaId>3</CategoriaId>
+  </Produto>
+</ArrayOfProduto>

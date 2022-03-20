@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfFeedback xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Feedback>
+    <id>1</id>
+    <mensagem>Amei a variacao dos produtos, irei comprar mais chaveirinhos!</mensagem>
+    <data>2022-03-19T22:11:58.2846256+00:00</data>
+    <cliente>
+      <id>1</id>
+      <nome>Manel da Foice</nome>
+      <nascimento>1972-04-23T00:00:00</nascimento>
+      <contato>(84)987654321</contato>
+      <endereco>Rua Teleléu, Paranauê</endereco>
+      <estado>RN</estado>
+    </cliente>
+    <clienteId>1</clienteId>
+  </Feedback>
+  <Feedback>
+    <id>2</id>
+    <mensagem>O binóculo veio em ótimo estado e chegou antes do tempo.</mensagem>
+    <data>2022-03-19T22:13:01.1751286+00:00</data>
+    <cliente>
+      <id>2</id>
+      <nome>Zé do Mato</nome>
+      <nascimento>1964-11-06T00:00:00</nascimento>
+      <contato>(84) 992345678</contato>
+      <endereco>Rua Teleléu, Paranauê</endereco>
+      <estado>RN</estado>
+    </cliente>
+    <clienteId>2</clienteId>
+  </Feedback>
+</ArrayOfFeedback>

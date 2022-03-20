@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCliente xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Cliente>
+    <id>1</id>
+    <nome>Manel da Foice</nome>
+    <nascimento>1972-04-23T00:00:00</nascimento>
+    <contato>(84)987654321</contato>
+    <endereco>Rua Teleléu, Paranauê</endereco>
+    <estado>RN</estado>
+  </Cliente>
+  <Cliente>
+    <id>2</id>
+    <nome>Zé do Mato</nome>
+    <nascimento>1964-11-06T00:00:00</nascimento>
+    <contato>(84) 992345678</contato>
+    <endereco>Rua Teleléu, Paranauê</endereco>
+    <estado>RN</estado>
+  </Cliente>
+</ArrayOfCliente>
