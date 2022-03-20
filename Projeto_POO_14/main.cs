@@ -130,7 +130,7 @@ class MainClass{
         Console.WriteLine("----------- Opções Disponíveis -----------");
         Console.WriteLine("01 - Entrar como Vendedor");
         Console.WriteLine("02 - Entrar como Cliente");
-        Console.WriteLine("00 - Encerrar operações");
+        Console.WriteLine("00 - Encerrar Operações");
         Console.WriteLine("");
         Console.Write("Informe a operação: ");
         int operacao = int.Parse(Console.ReadLine());
@@ -142,7 +142,7 @@ class MainClass{
 
     public static int MenuVendedor(){
         Console.WriteLine("----------- Opções Disponíveis -----------");
-        Console.WriteLine("00 - Encerrar Programa");
+        Console.WriteLine("00 - Encerrar Operações");
         Console.WriteLine("01 - Listar Categorias");
         Console.WriteLine("02 - Inserir Categoria");
         Console.WriteLine("03 - Atualizar Categoria");
@@ -188,7 +188,7 @@ class MainClass{
     public static int MenuClienteLogout(){
         Console.WriteLine("");
         Console.WriteLine("----------- Escolha uma opção -----------");
-        Console.WriteLine("00 - Encerrar Programa");
+        Console.WriteLine("00 - Encerrar Operações");
         Console.WriteLine("01 - Visualizar produtos disponíveis");
         Console.WriteLine("02 - Inserir produto no carrinho");
         Console.WriteLine("03 - Visualizar carrinho de compras");

@@ -84,4 +84,25 @@
       </VendaItem>
     </Itens>
   </Venda>
+  <Venda>
+    <cliente>
+      <id>1</id>
+      <nome>Manel da Foice</nome>
+      <nascimento>1972-04-23T00:00:00</nascimento>
+      <contato>(84)987654321</contato>
+      <endereco>Rua Teleléu, Paranauê</endereco>
+      <estado>RN</estado>
+    </cliente>
+    <Id>5</Id>
+    <Data>2022-03-20T22:50:46.50922+00:00</Data>
+    <Carrinho>false</Carrinho>
+    <ClienteId>1</ClienteId>
+    <Itens>
+      <VendaItem>
+        <Qtd>1</Qtd>
+        <Valor>800</Valor>
+        <ProdutoId>5</ProdutoId>
+      </VendaItem>
+    </Itens>
+  </Venda>
 </ArrayOfVenda>
